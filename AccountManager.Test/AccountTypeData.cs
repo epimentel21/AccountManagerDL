@@ -18,7 +18,6 @@ namespace AccountManager.Test
             context = factory.CreateDbContext(null);
         }
 
-     
 
         [TestMethod]
         public void AddOK()
