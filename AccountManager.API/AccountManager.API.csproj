@@ -9,9 +9,11 @@
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AccountManager.API.AccountType\AccountManager.API.AccountType.csproj" />
     <ProjectReference Include="..\AccountManager.API.Account\AccountManager.API.Account.csproj" />
   </ItemGroup>
 
