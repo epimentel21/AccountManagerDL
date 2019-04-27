@@ -7,37 +7,37 @@ using System.Text;
 
 namespace AccountManager.Data
 {
-    public class AccountManagerDbContext : DbContext
+    public class AccountManagerDbContext: DbContext
     {
-        public AccountManagerDbContext(DbContextOptions<AccountManagerDbContext> options) : base(options)
+        public AccountManagerDbContext(
+            DbContextOptions<AccountManagerDbContext> options) : base(options)
         {
-
         }
 
         public DbSet<AccountType> AccountType { get; set; }
         public DbSet<Account> Account { get; set; }
 
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<AccountType>()
-                .HasKey(option => option.Id);
+                .HasKey(r => r.Id);
 
             modelBuilder.Entity<Account>()
-                .HasKey(option => option.Id);
+                .HasKey(r => r.Id);
 
             modelBuilder.Entity<AccountType>()
-                .HasIndex(option => option.Codigo)
+                .HasIndex(r => r.Code)
                 .IsUnique(true);
 
             modelBuilder.Entity<Account>()
-                .HasIndex(option => option.Code)
+                .HasIndex(r => r.Code)
                 .IsUnique(true);
 
             modelBuilder.Entity<Account>()
-                .HasOne(option => option.AccountType)
-                .WithMany(opt => opt.Accounts)
+                .HasOne(r => r.AccountType)
+                .WithMany(r => r.Accounts)
                 .OnDelete(DeleteBehavior.Restrict);
         }
-
     }
 }
