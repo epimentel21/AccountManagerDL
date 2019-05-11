@@ -22,7 +22,9 @@ namespace AccountManager.Data
             CreateMap<Account, AccountDTO>();
 
             CreateMap<AccountDTO, Account>()
-                .ForMember(d=>d.RowVersion, opt => opt.Ignore());
+                .ForMember(d=>d.AccountTypeId,opt=>opt.MapFrom(s=>s.AccountType.Id))
+                .ForMember(d=>d.RowVersion, opt => opt.Ignore())
+                .ForMember(d=>d.AccountType,opt=>opt.Ignore());
 
             CreateMap<AccountTypeDTO, AccountType>()
                 .ForMember(d=>d.Accounts, opt=>opt.Ignore())

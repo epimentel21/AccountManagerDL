@@ -7,11 +7,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountManager.Data", "Acco
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountManager.Test", "AccountManager.Test\AccountManager.Test.csproj", "{81802CB6-B02D-474A-AC01-1F628AF0ECA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountManager.API", "AccountManager.API\AccountManager.API.csproj", "{DD663BB7-9D3F-41FD-9F74-60E16037D381}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountManager.API", "AccountManager.API\AccountManager.API.csproj", "{DD663BB7-9D3F-41FD-9F74-60E16037D381}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountManager.API.Account", "AccountManager.API.Account\AccountManager.API.Account.csproj", "{767E5277-4BC9-409C-B035-5EA32556729A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountManager.API.Account", "AccountManager.API.Account\AccountManager.API.Account.csproj", "{767E5277-4BC9-409C-B035-5EA32556729A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountManager.API.AccountType", "AccountManager.API.AccountType\AccountManager.API.AccountType.csproj", "{BD46F9F7-2ADF-471E-AF70-054754665116}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountManager.API.AccountType", "AccountManager.API.AccountType\AccountManager.API.AccountType.csproj", "{BD46F9F7-2ADF-471E-AF70-054754665116}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{D6DDFA56-7C69-4CE1-85EB-0224160A95FD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libs", "libs", "{203861B3-C245-40E5-8595-F5A73C31D0DE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{8018C181-4E3F-42C0-B59D-67063938F79A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{243ABA07-8B93-46F1-B437-90DF0A077CDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountManager.UI.MVC", "AccountManager.UI.MVC\AccountManager.UI.MVC.csproj", "{4BBB44F7-B68C-4C0D-9F4F-AD37ADFBF04D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,9 +49,21 @@ Global
 		{BD46F9F7-2ADF-471E-AF70-054754665116}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD46F9F7-2ADF-471E-AF70-054754665116}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD46F9F7-2ADF-471E-AF70-054754665116}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BBB44F7-B68C-4C0D-9F4F-AD37ADFBF04D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BBB44F7-B68C-4C0D-9F4F-AD37ADFBF04D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BBB44F7-B68C-4C0D-9F4F-AD37ADFBF04D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BBB44F7-B68C-4C0D-9F4F-AD37ADFBF04D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7BFF886C-2A3F-4396-B5D2-6EA21B104216} = {203861B3-C245-40E5-8595-F5A73C31D0DE}
+		{81802CB6-B02D-474A-AC01-1F628AF0ECA7} = {8018C181-4E3F-42C0-B59D-67063938F79A}
+		{DD663BB7-9D3F-41FD-9F74-60E16037D381} = {D6DDFA56-7C69-4CE1-85EB-0224160A95FD}
+		{767E5277-4BC9-409C-B035-5EA32556729A} = {D6DDFA56-7C69-4CE1-85EB-0224160A95FD}
+		{BD46F9F7-2ADF-471E-AF70-054754665116} = {D6DDFA56-7C69-4CE1-85EB-0224160A95FD}
+		{4BBB44F7-B68C-4C0D-9F4F-AD37ADFBF04D} = {243ABA07-8B93-46F1-B437-90DF0A077CDA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B99483ED-02DB-4B60-BC28-885FC02EBE0D}
